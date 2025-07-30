@@ -1,0 +1,43 @@
+﻿1.Substrate,2.Age,3.CoatingPrime,3.Coating2nd,3.CoatingTop,4.Insulation,5.Vapor Barrier,6.Ext. Environment,7.Jacketing (Need to Site Survay),8.Severity,10.CUI from Severity
+CS,12,Zinc ethyl silicate,Zinc silicate,Zinc silicate,Mineral Fiber,no,Marine,1 - Defect without gap and hole,Moderate,Yes
+CS,12,Zinc ethyl silicate,Zinc silicate,Zinc silicate,Mineral Fiber,no,Marine,2 - Some gap and hole for water ingress were presented,Moderate,Yes
+CS,12,Zinc ethyl silicate,Zinc silicate,Zinc silicate,Mineral Fiber,no,Marine,3 - Jacket is open or present of large hole,Moderate,Yes
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Mineral Fiber,no,Marine,1 - Defect without gap and hole,No corrosion,No
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Mineral Fiber,no,Marine,2 - Some gap and hole for water ingress were presented,No corrosion,No
+CS,12,Zinc ethyl silicate,Zinc silicate,Zinc silicate,Mineral Fiber,no,Marine,3 - Jacket is open or present of large hole,Slight scale,No
+CS,12,Zinc ethyl silicate,Zinc silicate,Zinc silicate,Mineral Fiber,no,Marine,2 - Some gap and hole for water ingress were presented,Slight scale,No
+CS,12,Zinc ethyl silicate,Zinc silicate,Zinc silicate,Mineral Fiber,no,Marine,2 - Some gap and hole for water ingress were presented,No corrosion,No
+CS,12,Zinc ethyl silicate,Zinc silicate,Zinc silicate,Mineral Fiber,no,Marine,3 - Jacket is open or present of large hole,No corrosion,No
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Mineral Fiber,no,Marine,2 - Some gap and hole for water ingress were presented,Moderate,Yes
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Mineral Fiber,no,Marine,1 - Defect without gap and hole,Moderate,Yes
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Cellular glass,no,Marine,1 - Defect without gap and hole,No corrosion,No
+LTCS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Cellular glass,no,Marine,1 - Defect without gap and hole,Slight scale,No
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Cellular glass,no,Marine,1 - Defect without gap and hole,Slight scale,No
+LTCS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Cellular glass,no,Marine,2 - Some gap and hole for water ingress were presented,Slight scale,No
+LTCS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Marine,1 - Defect without gap and hole,Slight scale,No
+LTCS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Marine,1 - Defect without gap and hole,No corrosion,No
+LTCS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Inside building,2 - Some gap and hole for water ingress were presented,No corrosion,No
+LTCS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Inside building,1 - Defect without gap and hole,No corrosion,No
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Cellular glass,no,Marine,2 - Some gap and hole for water ingress were presented,No corrosion,No
+LTCS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Cellular glass,no,Marine,1 - Defect without gap and hole,No corrosion,No
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Cellular glass,no,Marine,1 - Defect without gap and hole,Severe,Yes
+LTCS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Mineral Fiber,no,Marine,1 - Defect without gap and hole,No corrosion,No
+LTCS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Mineral Fiber,no,Marine,3 - Jacket is open or present of large hole,No corrosion,No
+CS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Marine,2 - Some gap and hole for water ingress were presented,Moderate,Yes
+CS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Marine,2 - Some gap and hole for water ingress were presented,Slight scale,No
+CS,12,Zinc ethyl silicate,Zinc silicate,Zinc silicate,Mineral Fiber,no,Marine,1 - Defect without gap and hole,Slight scale,No
+CS,12,Zinc ethyl silicate,Zinc silicate,Zinc silicate,Mineral Fiber,no,Marine,1 - Defect without gap and hole,No corrosion,No
+CS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Marine,1 - Defect without gap and hole,Moderate,Yes
+CS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Marine,1 - Defect without gap and hole,Slight scale,No
+CS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Marine,1 - Defect without gap and hole,No corrosion,No
+CS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Marine,3 - Jacket is open or present of large hole,Moderate,Yes
+CS,12,Rich zinc epoxy,Modified epoxy,Polyurethane,Mineral Fiber,no,Marine,3 - Jacket is open or present of large hole,No corrosion,No
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Mineral Fiber,no,Marine,3 - Jacket is open or present of large hole,Slight scale,No
+LTCS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Cellular glass,no,Marine,2 - Some gap and hole for water ingress were presented,No corrosion,No
+CS,12,Phenolic epoxy,Phenolic epoxy,None top coat,Mineral Fiber,no,Marine,1 - Defect without gap and hole,Slight scale,No
+CS,16,Inorganic zinc self-cure,High built polyamide epoxy MIO stone,2 component polyurethane,Mineral wool,no,Moderate industrial,1 - Defect without gap and hole,no corrosion,No
+CS,16,Inorganic zinc self-cure,High built polyamide epoxy MIO stone,2 component polyurethane,Mineral wool,no,Moderate industrial,1 - Defect without gap and hole,slight scale,No
+CS,16,Inorganic zinc self-cure,Sillicone acrylic MIO,Silicone acrylic,Mineral wool,no,Moderate industrial,2 - Some gap and hole for water ingress were presented,slight scale,No
+CS,16,Inorganic zinc self-cure,Sillicone acrylic MIO,Silicone acrylic,Mineral wool,no,Moderate industrial,2 - Some gap and hole for water ingress were presented,no corrosion,No
+CS,16,Inorganic zinc self-cure,High built polyamide epoxy MIO stone,2 component polyurethane,Unknow,no,Moderate industrial,2 - Some gap and hole for water ingress were presented,slight scale,No
+CS,16,Inorganic zinc self-cure,High built polyamide epoxy MIO stone,2 component polyurethane,Unknow,no,Moderate industrial,1 - Defect without gap and hole,slight scale,No
