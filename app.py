@@ -19,7 +19,6 @@ header_path = "Header SCT.png"
 logo_base64 = img_to_base64(logo_path)
 bg_base64 = img_to_base64(header_path)
 
-# --- CSS และส่วนหัวเว็บ ---
 st.markdown(f"""
     <style>
     .banner {{
@@ -30,13 +29,18 @@ st.markdown(f"""
         margin-bottom: 30px;
     }}
     .logo {{
-        margin-bottom: 10px;
+        font-size: 32px;
+        color: #3498db;
+        font-weight: bold;
+        margin-top: -30px;
+        margin-bottom: 16px;
     }}
     .headline {{
         font-size: 28px;
         color: white;
         font-weight: bold;
         margin-bottom: 0px;
+        margin-top: 0px;
     }}
     .subheadline {{
         font-size: 20px;
@@ -51,20 +55,17 @@ st.markdown(f"""
         margin-top: 0;
     }}
     </style>
-
     <div class='banner'>
         <div class='logo'>
             <img src="data:image/png;base64,{logo_base64}" height="48">
         </div>
         <div class='headline'>
-            <span style='color:#222;font-weight:bold;'>POTENTIAL&nbsp;|&nbsp;</span>
-            <span style='color:#fff;'>WATER ENTER POINT</span>
+        <span style='color:#fff;font-weight:bold;'>POTENTIAL&nbsp;</span>
+        <span style='color:#fff;font-weight:bold;'>WATER ENTRY POINT</span>
         </div>
         <div class='subheadline'>Smart CUI Troubleshooting Project</div>
         <div class='desc'>
-            Using this artificial intelligence model, you can efficiently detect potential water enter point from images captured during inspections.
-            It is built with YoloV8 components and utilities, requiring minimal modification for your specific use case. Simply import the images into the CIRA CORE platform,
-            and the model will analyze them to identify potential areas of water enter point.
+        Using this artificial intelligence model, you can efficiently detect potential water entry point from images captured during inspections. It is built with Yolov8 components and utilities, requiring minimal modification for your specific use case.
         </div>
     </div>
 """, unsafe_allow_html=True)
