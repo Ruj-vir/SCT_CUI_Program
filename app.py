@@ -78,7 +78,7 @@ st.markdown(
 # --- โหลดและฝึกโมเดล (แคชไว้) ---
 @st.cache_data
 def load_training_model():
-    df = pd.read_csv(r"C:\Users\26009623\Downloads\CUi_Project_\N-Ruj\Program_Ruj_StreamLit\DataSet_ruj\DataTrainingCol1toCol8ForParaX_Col9ForParaY.csv")
+    df = pd.read_csv(r"DataTrainingCol1toCol8ForParaX_Col9ForParaY.csv")
     X_train = df.iloc[:, :-1]
     y_train = df.iloc[:, -1]
 
