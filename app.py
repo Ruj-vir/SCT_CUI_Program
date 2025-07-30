@@ -60,12 +60,11 @@ st.markdown(f"""
             <img src="data:image/png;base64,{logo_base64}" height="48">
         </div>
         <div class='headline'>
-        <span style='color:#fff;font-weight:bold;'>POTENTIAL&nbsp;</span>
-        <span style='color:#fff;font-weight:bold;'>WATER ENTRY POINT</span>
+        <span style='color:#fff;font-weight:bold;'>CORROSION UNDER INSULATION (CUI) SEVERITY</span>
         </div>
         <div class='subheadline'>Smart CUI Troubleshooting Project</div>
         <div class='desc'>
-        Using this artificial intelligence model, you can efficiently detect potential water entry point from images captured during inspections. It is built with Yolov8 components and utilities, requiring minimal modification for your specific use case.
+        Corrosion Under Insulation (CUI) Severity can be predicted by leveraging AI technology. Using the CUI Master Data Template file as input, the severity of CUI is forecasted through a model built with Random Forest components and utilities. Simply import the collected data into the machine learning model, and the system will analyze the severity of CUI.  This approach allows for accurate and efficient assessment, supporting maintenance planning and prioritization.
         </div>
     </div>
 """, unsafe_allow_html=True)
