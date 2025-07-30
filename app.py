@@ -11,7 +11,7 @@ def img_to_base64(img_file_path):
     return encoded_img
 
 # --- ตั้งค่า ---
-st.set_page_config(page_title="Water Enter Point Detector", layout="centered")
+st.set_page_config(page_title="CUI Severity", layout="centered")
 
 # --- โหลดรูปภาพและแปลงเป็น base64 ---
 logo_path = "Logo.png"
