@@ -131,7 +131,13 @@ if uploaded_file is not None:
         y_pred = clf.predict(manual_input)
         predicted_label = target_encoder.inverse_transform(y_pred)
 
-        st.success(f"✅ ผลทำนายคือ: **{predicted_label[0]}**")
+        # แสดงผลทำนายด้วยสีตามค่า
+        if predicted_label[0] == "No":
+            st.error(f"❌ ผลทำนายคือ: **{predicted_label[0]}**")
+        else:
+            st.success(f"✅ ผลทำนายคือ: **{predicted_label[0]}**")
+
+        
 
     except Exception as e:
         st.error(f"เกิดข้อผิดพลาดในการประมวลผลไฟล์: {e}")
