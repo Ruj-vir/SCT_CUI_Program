@@ -71,7 +71,7 @@ st.markdown(f"""
 
 # --- ข้อความแนะนำการอัปโหลด ---
 st.markdown(
-    "<div style='text-align:center; font-size:20px; color:#3498db; margin-bottom:15px;'>📤 Upload your Excel file to predict potential water enter point.</div>",
+    "<div style='text-align:center; font-size:20px; color:#3498db; margin-bottom:15px;'>📤 Upload your Excel file to predict CUI SEVERITY</div>",
     unsafe_allow_html=True
 )
 
