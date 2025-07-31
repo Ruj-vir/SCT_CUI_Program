@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 import base64
+import pickle
 
 # --- ฟังก์ชันแปลงภาพเป็น base64 สำหรับใช้ใน CSS ---
 def img_to_base64(img_file_path):
@@ -11,7 +12,7 @@ def img_to_base64(img_file_path):
     return encoded_img
 
 # --- ตั้งค่า ---
-st.set_page_config(page_title="Potential CUI Locations", layout="centered")
+st.set_page_config(page_title="Water Enter Point Detector", layout="centered")
 
 # --- โหลดรูปภาพและแปลงเป็น base64 ---
 logo_path = "Logo.png"
@@ -19,6 +20,7 @@ header_path = "Header SCT.png"
 logo_base64 = img_to_base64(logo_path)
 bg_base64 = img_to_base64(header_path)
 
+# --- CSS และส่วนหัวเว็บ ---
 st.markdown(f"""
     <style>
     .banner {{
@@ -29,18 +31,13 @@ st.markdown(f"""
         margin-bottom: 30px;
     }}
     .logo {{
-        font-size: 32px;
-        color: #3498db;
-        font-weight: bold;
-        margin-top: -30px;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
     }}
     .headline {{
         font-size: 28px;
         color: white;
         font-weight: bold;
         margin-bottom: 0px;
-        margin-top: 0px;
     }}
     .subheadline {{
         font-size: 20px;
@@ -55,49 +52,38 @@ st.markdown(f"""
         margin-top: 0;
     }}
     </style>
+
     <div class='banner'>
         <div class='logo'>
             <img src="data:image/png;base64,{logo_base64}" height="48">
         </div>
         <div class='headline'>
-        <span style='color:#fff;font-weight:bold;'>Potential CUI Locations</span>
+            <span style='color:#222;font-weight:bold;'>POTENTIAL&nbsp;|&nbsp;</span>
+            <span style='color:#fff;'>WATER ENTER POINT</span>
         </div>
         <div class='subheadline'>Smart CUI Troubleshooting Project</div>
         <div class='desc'>
-        Potential CUI Locations can be predicted using AI technology. By leveraging parameters that influence CUI as input, a machine learning model can forecast potential area of CUI. Users simply import the collected data into the model, and the system predicts the likely locations of CUI. This approach enables accurate and efficient assessments, enhancing maintenance planning and prioritization.
+            Using this artificial intelligence model, you can efficiently detect potential water enter point from images captured during inspections.
+            It is built with YoloV8 components and utilities, requiring minimal modification for your specific use case. Simply import the images into the CIRA CORE platform,
+            and the model will analyze them to identify potential areas of water enter point.
         </div>
     </div>
 """, unsafe_allow_html=True)
 
 # --- ข้อความแนะนำการอัปโหลด ---
 st.markdown(
-    "<div style='text-align:center; font-size:20px; color:#3498db; margin-bottom:15px;'>📤 Upload your Excel file to predict CUI severity</div>",
+    "<div style='text-align:center; font-size:20px; color:#3498db; margin-bottom:15px;'>📤 Upload your Excel file to predict potential water enter point.</div>",
     unsafe_allow_html=True
 )
 
-# --- โหลดและฝึกโมเดล (แคชไว้) ---
-@st.cache_data
-def load_training_model():
-    df = pd.read_csv(r"DataTrainingCol1toCol8ForParaX_Col9ForParaY.csv")
-    X_train = df.iloc[:, :-1]
-    y_train = df.iloc[:, -1]
+# --- โหลดโมเดลจาก .pkl ---
+@st.cache_resource
+def load_model_from_pickle():
+    with open("model_and_encoders.pkl", "rb") as f:
+        clf, encoders, target_encoder, feature_columns = pickle.load(f)
+    return clf, encoders, target_encoder, feature_columns
 
-    encoders = {}
-    for col in X_train.columns:
-        le = LabelEncoder()
-        X_train[col] = le.fit_transform(X_train[col].astype(str))
-        encoders[col] = le
-
-    target_encoder = LabelEncoder()
-    y_train = target_encoder.fit_transform(y_train.astype(str))
-
-    clf = RandomForestClassifier(n_estimators=100, random_state=42)
-    clf.fit(X_train, y_train)
-
-    return clf, encoders, target_encoder, X_train.columns.tolist()
-
-# โหลดโมเดล
-clf, encoders, target_encoder, feature_columns = load_training_model()
+clf, encoders, target_encoder, feature_columns = load_model_from_pickle()
 
 # --- อัปโหลดและทำนาย Excel ---
 uploaded_file = st.file_uploader("Upload Excel (.xlsx) ที่มี Row 2 เป็นข้อมูล", type=["xlsx"])
@@ -136,8 +122,6 @@ if uploaded_file is not None:
             st.error(f"❌ ผลทำนายคือ: **{predicted_label[0]}**")
         else:
             st.success(f"✅ ผลทำนายคือ: **{predicted_label[0]}**")
-
-        
 
     except Exception as e:
         st.error(f"เกิดข้อผิดพลาดในการประมวลผลไฟล์: {e}")
