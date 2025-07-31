@@ -12,7 +12,7 @@ def img_to_base64(img_file_path):
     return encoded_img
 
 # --- ตั้งค่า ---
-st.set_page_config(page_title="Water Enter Point Detector", layout="centered")
+st.set_page_config(page_title="Potential CUI Locations", layout="centered")
 
 # --- โหลดรูปภาพและแปลงเป็น base64 ---
 logo_path = "Logo.png"
@@ -58,14 +58,12 @@ st.markdown(f"""
             <img src="data:image/png;base64,{logo_base64}" height="48">
         </div>
         <div class='headline'>
-            <span style='color:#222;font-weight:bold;'>POTENTIAL&nbsp;|&nbsp;</span>
-            <span style='color:#fff;'>WATER ENTER POINT</span>
+            <span style='color:#fff;font-weight:bold;'>POTENTIAL&nbsp;|&nbsp;</span>
+            <span style='color:#fff;'>Potential CUI Locations</span>
         </div>
         <div class='subheadline'>Smart CUI Troubleshooting Project</div>
         <div class='desc'>
-            Using this artificial intelligence model, you can efficiently detect potential water enter point from images captured during inspections.
-            It is built with YoloV8 components and utilities, requiring minimal modification for your specific use case. Simply import the images into the CIRA CORE platform,
-            and the model will analyze them to identify potential areas of water enter point.
+            Potential CUI Locations can be predicted using AI technology. By leveraging parameters that influence CUI as input, a machine learning model can forecast potential area of CUI. Users simply import the collected data into the model, and the system predicts the likely locations of CUI. This approach enables accurate and efficient assessments, enhancing maintenance planning and prioritization.
         </div>
     </div>
 """, unsafe_allow_html=True)
