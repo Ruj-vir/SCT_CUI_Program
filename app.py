@@ -11,7 +11,7 @@ def img_to_base64(img_file_path):
     return encoded_img
 
 # --- ตั้งค่า ---
-st.set_page_config(page_title="CUI Severity", layout="centered")
+st.set_page_config(page_title="Potential CUI Locations", layout="centered")
 
 # --- โหลดรูปภาพและแปลงเป็น base64 ---
 logo_path = "Logo.png"
@@ -60,11 +60,11 @@ st.markdown(f"""
             <img src="data:image/png;base64,{logo_base64}" height="48">
         </div>
         <div class='headline'>
-        <span style='color:#fff;font-weight:bold;'>CORROSION UNDER INSULATION (CUI) SEVERITY</span>
+        <span style='color:#fff;font-weight:bold;'>Potential CUI Locations</span>
         </div>
         <div class='subheadline'>Smart CUI Troubleshooting Project</div>
         <div class='desc'>
-        Corrosion Under Insulation (CUI) Severity can be predicted by leveraging AI technology. Using the CUI Master Data Template file as input, the severity of CUI is forecasted through a model built with Random Forest components and utilities. Simply import the collected data into the machine learning model, and the system will analyze the severity of CUI.  This approach allows for accurate and efficient assessment, supporting maintenance planning and prioritization.
+        Potential CUI Locations can be predicted using AI technology. By leveraging parameters that influence CUI as input, a machine learning model can forecast potential area of CUI. Users simply import the collected data into the model, and the system predicts the likely locations of CUI. This approach enables accurate and efficient assessments, enhancing maintenance planning and prioritization.
         </div>
     </div>
 """, unsafe_allow_html=True)
